@@ -1,0 +1,25 @@
+// they have limited value. 256 possible values. a->97, b->98.. A->65, B->66..
+
+String s = "geeksforgeeks"
+System.out.println(s.indexof("geeks"));
+System.out.println(s.indexof("for"));
+System.out.println(s.substring(1,3)); // (beginning index, end index(excl
+1. given two strings, check if they are anagram of each other or not
+ex- geeks, ekegs are anagrams
+
+// naive solution O[n square]
+// two unequal length strings cant be anagram
+// better solution using the ascii values of each alphabet - O[n]
+
+bool string( string s1, string s2)
+if(s1.length!= s2.length)
+  return false;
+int count[256] = new int[256]; 
+for(int i=0; i<s1.length; i++)
+  count[s1[i]]++;              // increment
+for(int i=0; i<s2.length; i++)
+  count[s2[i]]--;               // decrement
+for(int i=0; i<256;i++)
+  if(count[i]!=0)
+    return false;
+return true;
