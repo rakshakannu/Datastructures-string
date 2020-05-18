@@ -9,7 +9,7 @@ ex- geeks, ekegs are anagrams
 
 // naive solution O[n square]
 // two unequal length strings cant be anagram
-// better solution using the ascii values of each alphabet - O[n]
+// better solution using the ascii values of each alphabet - O[n] or O[n+alphabet size]
 
 bool string( string s1, string s2)
 if(s1.length!= s2.length)
@@ -23,3 +23,7 @@ for(int i=0; i<256;i++)
   if(count[i]!=0)
     return false;
 return true;
+
+2. Given a string, find the leftmost character that repeats
+
+// naive solution using two loops, O[n square]
