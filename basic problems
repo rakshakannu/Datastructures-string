@@ -27,3 +27,12 @@ return true;
 2. Given a string, find the leftmost character that repeats
 
 // naive solution using two loops, O[n square]
+
+// efficient solution 
+// frequency method
+
+3. Given a string, find the leftmost char that does not repeat
+VERY IMPORTANT QUESTION
+
+// naive - [n square]
+
