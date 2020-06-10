@@ -32,7 +32,19 @@ return true;
 // frequency method
 
 3. Given a string, find the leftmost char that does not repeat
-VERY IMPORTANT QUESTION
+VERY IMPORTANT AND POPULAR INTERVIEW QUESTION
 
-// naive - [n square]
+// naive - [n square] using i,j
+
+// better solution - O[n] - travering the string twice
+
+// best solution - O[n] - by traversing only once
+
+4. given a string, find lexicograghic rank of it
+// lexicographic rank means when you sort the string and find all the possible permutions and rank them.
+
+// - O[n]
+// count lexicographically smaller than given string
+
+
 
