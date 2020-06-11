@@ -1,0 +1,4 @@
+// we preprocess the pattern to handle redundancies within the pattern
+// ex - 'AAAA' is a redundancy
+// we find lps which is the longest proper prefix which is also suffix
+// then it will work like the naive algorithm
