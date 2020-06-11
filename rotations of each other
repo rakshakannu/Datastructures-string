@@ -1,0 +1,18 @@
+// can be clockwise or counter clockwise doesn't matter
+// ex- 'abcd' , 'cdab' - yes
+
+// naive solution
+// compare each charector of first string with character in second string
+
+// better solution - concatenate s1 with itself and search for s2 in the new concatenated string.
+
+bool areRotation( String s1, String s2)
+{
+  if(s1.length()!= s2.length())
+    return false;
+  s1= s1+s1;
+  return (s1.indexOf(s2)>=0);
+}
+
+note - in java, indexOf() can be used for a single character as well as a substring to find the first occurance of that character in the
+main string.
