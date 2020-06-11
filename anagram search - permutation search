@@ -1,0 +1,6 @@
+// given a text string and pattern string, find of a permutation of the pattern exists in that string.
+// ex- 'geeksforgeeks' , 'egek' - yes because geek is present in the string.
+// we can use the logic of anagram search - O[n-m+1]*m
+
+// better solution - O[n]
+//
