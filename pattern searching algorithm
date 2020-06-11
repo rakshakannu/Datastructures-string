@@ -1,0 +1,46 @@
+// output all the indexes in which that patter of string is present
+
+// naive solution - O(n-m+1)*m
+
+void patternSearch( String txt, String pat)
+{
+  int n = txt.length();
+  int m = pat.length();
+  
+  for(int i=0; i< n-m ;i++)
+  {
+    for(int j=0;j<m;j++)
+    {
+      (if(txt[i+j]!=pat[j])
+        break;
+    }
+    
+    if(j==m)
+      print(i);
+  }
+}
+  
+// better solution if characters in the string are distinct - O[n]
+  
+  void patternSearch( String txt, String pat)
+{
+  int n = txt.length();
+  int m = pat.length();
+  
+  for(int i=0; i< n-m ;i++)
+  {
+    for(int j=0;j<m;j++)
+    {
+      (if(txt[i+j]!=pat[j])
+        break;
+    }
+    
+    if(j==m)
+      print(i);
+      
+    if(j==0)
+      i++;
+    else
+      i=i+j;
+  }
+}
