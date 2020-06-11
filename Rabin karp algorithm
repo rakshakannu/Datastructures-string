@@ -1,0 +1,5 @@
+// not used much
+// we compute hash function of the pattern and hash function of first window of text, and then compare each character.
+// hash function of every window changes called rolling hash
+// works better in average case than the naive solution
+// worst case is still same as naive solution
