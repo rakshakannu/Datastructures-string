@@ -1,5 +1,12 @@
-// solution - O[n]
-// find all the characters that have lesser rank and calculate rank
+// finding the lexographic rank of a string in its list of permutaions
+
+// naive solution
+// generate all the permutaions of the string in increasing order
+// while generating, compare the given string and if it matches, then return the rank
+
+// efficient solution
+// count lexicographically smaller strings + 1
+
 
 
 
